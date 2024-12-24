@@ -30,7 +30,7 @@ body {
     display: flex;
     justify-content: center;
     color: var(--color-text);
-    font-size: 40px;
+    font-size: var(--font-title-large);
     font-weight: bold;
 }
 
@@ -40,6 +40,6 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    row-gap: 10px;
-    column-gap: 10px;
+    row-gap: 20px;
+    column-gap: 20px;
 }
