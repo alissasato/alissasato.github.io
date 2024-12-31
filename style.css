@@ -1,20 +1,26 @@
 :root {
-    --color-bg: #B1C1C0;
-    --color-text: #577547;
+    --color-bg: #d4e1e0;
+    --color-text: #c8d3e7;
+    --color-bg-menu: #000000b1;
+    --color-bg-menu-sticky: #0000005f;
+    --color-text-link: #728cc0;
+    --color-text-accent: #95b0fb;
     --font-footer: 0.8em;
-    --font-title: 1.2em;
-    --font-title-large: 1.6em;
-    --font-description: 1.0em;
+    --font-title: 1.0em;
+    --font-title-large: 2.0em;
+    --font-description: 1.1em;
 
     scroll-behavior: smooth;
 }
 
 body {
-    background: var(--color-bg);
+    background: linear-gradient(19deg, rgb(13 15 17) 0%, rgb(52 46 73) 100%);
     font-family: "Playfair Display", serif;
     text-align: -webkit-center;
     text-align: -moz-center;
     justify-content: center;
+    margin: 0;
+    padding-top: 3.5em;
 }
 
 .bg-wrapper {
@@ -31,7 +37,17 @@ body {
     justify-content: center;
     color: var(--color-text);
     font-size: var(--font-title-large);
-    font-weight: bold;
+    font-weight: 600;
+    margin-bottom: 0.1em;
+}
+
+.subtitulo {
+    display: flex;
+    justify-content: center;
+    color: var(--color-text);
+    font-size: var(--font-title);
+    font-weight: 400;
+    margin-bottom: 0.4em;
 }
 
 .galeria-container {
@@ -42,4 +58,45 @@ body {
     justify-content: center;
     row-gap: 20px;
     column-gap: 20px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.0em 0.5em;
+    background-color: var(--color-bg-menu);
+    transition: 0.3s all ease;
+    z-index: 50;
+}
+
+.header.active {
+    padding: 0.5em 0.5em;
+    font-weight: 500;
+    background-color: var(--color-bg-menu-sticky);
+    transition: 0.3s all ease;
+    z-index: 50;
+}
+
+.link-wrapper {
+    align-items: center;
+    max-width: 760px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.linkText {
+    color: var(--color-text-link);
+    font-weight: 600;
+    text-decoration: none;
+    flex: 1;
+}
+
+.linkTextHighlight {
+    color: var(--color-text-accent);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: default;
+    flex: 1;
 }

@@ -15,29 +15,54 @@
 </html>
 
 <body>
+    <div class="header" id="stickyHeader">
+        <div class="link-wrapper">
+            <div class="linkTextHighlight">Home</div>
+            <a href="about.html" class="linkText">About</a>
+        </div>
+    </div>
+
     <div class="bg-wrapper">
         <div class="titulo">
-            Alissa Sato
+            Photography is Lorem Ipsum dolor qua qual
+        </div>
+        <div class="subtitulo">
+            Photography, Media and Arts of Alissa Sato
         </div>
 
         <div class="galeria-container">
-            <img src="img/Kiara.JPG" class="modaltriggerSquare">
-            <img src="img/Kiara.JPG" class="modaltriggerSquare">
-            <img src="img/Kiara.JPG" class="modaltriggerSquare">
-            <img src="img/Kiara.JPG" class="modaltriggerSquare">
-            <img src="img/Kiara.JPG" class="modaltriggerSquare">
-            <img src="img/Kiara.JPG" class="modaltriggerSquare">
-            <img src="img/Kiara.JPG" class="modaltriggerSquare">
-            <img src="img/Kiara.JPG" class="modaltriggerSquare">
-            <img src="img/Kiara.JPG" class="modaltriggerSquare">
+            <img src="img/1.jpg" class="modaltriggerSquare">
+            <img src="img/2.jpg" class="modaltriggerSquare">
+            <img src="img/3.jpg" class="modaltriggerSquare">
+            <img src="img/4.jpg" class="modaltriggerSquare">
+            <img src="img/5.jpg" class="modaltriggerSquare">
+            <img src="img/6.jpg" class="modaltriggerSquare">
+
+            <video class="modaltriggerVideo" autoplay muted loop>
+                <source src="mov/Dracula.mp4" type="video/mp4" />
+            </video>
+
+            <video class="modaltriggerVideo" autoplay muted loop>
+                <source src="mov/Frankenstein.mp4" type="video/mp4" />
+            </video>
+
+            <video class="modaltriggerVideo" autoplay muted loop>
+                <source src="mov/MedicoMonstro.mp4" type="video/mp4" />
+            </video>
+
         </div>
     </div>
 </body>
 
 <div id="myModal" class="modal">
     <img class="modal-content" id="modalImg">
+    <video class="modal-content-video" autoplay muted loop id="modalVideo">
+        <source src="" type="video/mp4" />
+    </video>
 </div>
 
+
 <script src="modal.js"></script>
+<script src="scrollTrigger.js"></script>
 
 </html>

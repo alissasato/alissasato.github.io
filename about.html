@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <Title>Alissa Sato | About</Title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+</html>
+
+<body>
+    <div class="header" id="stickyHeader">
+        <div class="link-wrapper">
+            <a href="index.html" class="linkText">Home</a>
+            <div class="linkTextHighlight">About</div>
+        </div>
+    </div>
+
+    <div class="bg-wrapper">
+        <div class="titulo">
+            Photography is Lorem Ipsum dolor qua qual
+        </div>
+        <div class="subtitulo">
+            Photography, Media and Arts of Alissa Sato
+        </div>
+
+        <div class="galeria-container">
+            <img src="img/1.jpg" class="modaltriggerSquare">
+            <img src="img/2.jpg" class="modaltriggerSquare">
+            <img src="img/3.jpg" class="modaltriggerSquare">
+
+            <video class="modaltriggerVideo" autoplay muted loop>
+                <source src="mov/Dracula.mp4" type="video/mp4" />
+            </video>
+
+            <video class="modaltriggerVideo" autoplay muted loop>
+                <source src="mov/Frankenstein.mp4" type="video/mp4" />
+            </video>
+
+            <video class="modaltriggerVideo" autoplay muted loop>
+                <source src="mov/MedicoMonstro.mp4" type="video/mp4" />
+            </video>
+
+        </div>
+    </div>
+</body>
+
+<div id="myModal" class="modal">
+    <img class="modal-content" id="modalImg">
+    <video class="modal-content-video" autoplay muted loop id="modalVideo">
+        <source src="" type="video/mp4" />
+    </video>
+</div>
+
+
+<script src="modal.js"></script>
+<script src="scrollTrigger.js"></script>
+
+</html>
