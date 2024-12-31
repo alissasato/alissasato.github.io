@@ -60,5 +60,6 @@ for (var index = 0; index < modalTriggersLarge.length; index++) {
 
 modal.onclick = function () {
   modal.style.display = "none";
+  modalVideo.src = "";
   mybutton.classList.add("active");
 }
